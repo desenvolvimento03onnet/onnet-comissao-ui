@@ -1,0 +1,43 @@
+.TabelaFundo{
+    position: relative;
+    border: 10px;
+    border-color: #008000;
+    box-shadow: 1px 1px 1px 1px;
+    background-color: transparent;
+    overflow: hidden;
+    width: 90%;
+    height: 90%;
+    border-radius: 30px;
+    font-size: 25px;
+}
+.Thead{
+    color: white;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    height: 25%;
+    background-color:#56bb44;
+}
+.Tbody{
+    background-color:#D3D3D3;
+}
+
+.Td{
+    text-align: center;
+    width: 33%;
+}
+
+.Spinner{
+    width: 56px;
+   height: 56px;
+   border-radius: 50%;
+   background: conic-gradient(#0000 10%,#474bff);
+   -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 9px),#000 0);
+   animation: spinner-zp9dbg 1s infinite linear;
+}
+
+@keyframes spinner-zp9dbg {
+    to {
+       transform: rotate(1turn);
+    }
+ }

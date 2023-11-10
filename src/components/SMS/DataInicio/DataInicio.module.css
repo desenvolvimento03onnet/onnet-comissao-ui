@@ -1,0 +1,21 @@
+.DivDataInicio{
+    align-items: center;
+    justify-content: center;
+    top: 0vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.InputDataInicio{
+    display: flex;
+    width: 70%;
+    padding: 15px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    background-color: #56bb44;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    text-justify: center;
+}

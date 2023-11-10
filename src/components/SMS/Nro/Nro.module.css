@@ -1,0 +1,25 @@
+.DivNro{
+    align-items: center;
+    justify-content: center;
+    top: 0vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+.InputNro{
+    display: flex;
+    width: 70%;
+    padding: 15px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    background-color: #56bb44;
+    color: white;
+}
+
+.InputNro::placeholder{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    text-justify: center;
+    color: white;
+}
