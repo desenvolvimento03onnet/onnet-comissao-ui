@@ -8,9 +8,6 @@ import ButtonLimpar from "../../components/SMS/Limpar/Limpar";
 import ButtonPesquisar from "../../components/SMS/Pesquisar/Pesquisar";
 
 function pageSMS() {
-  const Pesquisar = () =>{
-    console.log("Teste");
-  }
   return (
     <div className={styles.Card}>
       <div className={styles.Cima}>
@@ -23,7 +20,7 @@ function pageSMS() {
           <InputDataFim />
           <div className={styles.Botoes}>
             <ButtonLimpar />
-            <ButtonPesquisar onclick={Pesquisar} />
+            <ButtonPesquisar />
           </div>
         </div>
       </div>

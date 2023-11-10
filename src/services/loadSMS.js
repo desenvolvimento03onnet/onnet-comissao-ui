@@ -1,20 +1,14 @@
 import axios from 'axios';
+import tabelaSMS from '../components/SMS/Tabela/TabelaSMS';
 
-const dataToSend = {
-  numeroCel: '%88085509',
-  dataInicio: '01/10/2023',
-  dataFim: '06/11/2023'
-};
-
-export default function Load() {
-  const { numeroCel, dataInicio, dataFim } = dataToSend;
+export default function Load(nro, dtInicio, dtFim) {
 
   // Construa a URL com os parâmetros
-  const url = `http://localhost:3000/api/SMSNumero?numeroCel=${numeroCel}&dataInicio=${dataInicio}&dataFim=${dataFim}`;
+  const url = `http://localhost:3000/api/SMSNumero?numeroCel=${nro}&dataInicio=${dtInicio}&dataFim=${dtFim}`;
 
   return axios.get(url)
     .then((response) => {
-      return response.data; // Retorna os dados da resposta
+      return tabelaSMS(response.data); //console.log(response.data); // Retorna os dados da resposta
     })
     .catch((error) => {
       console.error('Erro na solicitação GET: ', error);

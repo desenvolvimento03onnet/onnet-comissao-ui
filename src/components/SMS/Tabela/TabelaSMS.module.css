@@ -9,6 +9,7 @@
     height: 90%;
     border-radius: 30px;
     font-size: 25px;
+    max-height: 100%;
 }
 .Thead{
     color: white;
@@ -25,6 +26,7 @@
 .Td{
     text-align: center;
     width: 33%;
+    height: 10%;
 }
 
 .Spinner{

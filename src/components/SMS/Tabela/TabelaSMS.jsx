@@ -1,47 +1,58 @@
-import LoadSMS from "../../../services/loadSMS";
-import { useState, useEffect } from "react";
 import styles from './TabelaSMS.module.css';
 
-function tabelaSMS() {
-  const [data, setData] = useState(null);
-
-  useEffect(() => {
-    LoadSMS()
-      .then((result) => {
-        setData(result); // Atualize o estado com os dados retornados
-      })
-      .catch((error) => {
-        console.error("Erro no componente App: ", error);
-      });
-  }, []); // O segundo argumento vazio garante que isso seja executado apenas uma vez
-  
-          if (data === null) {
-            // Aguarde até que os dados sejam carregados
-            return (
-              <div className={styles.Spinner}></div>);
-          } else {
-            return (
-              <table className={styles.TabelaFundo}>
-                <thead className={styles.Thead}>
-                  <tr>
-                    <td>Cliente</td>
-                    <td>Número do cliente</td>
-                    <td>Data de Envio</td>
-                  </tr>
-                </thead>
-                <tbody className={styles.Tbody}>
-                  {data.map((item, index) => (
-                    <tr key={index}>
-                      <td className={styles.Td}>{item.nome}</td>
-                      <td className={styles.Td}>{item.nro}</td>
-                      <td className={styles.Td}>{item.data}</td>
-                    </tr>
-                  ))}
-                  </tbody>
-              </table>
-          );
-        }
+function tabelaSMS(data) {
+{/* <tr key={[i]}>
+            <td className={styles.Td}>{data[i].nome}</td>
+            <td className={styles.Td}>{data[i].nro}</td>
+            <td className={styles.Td}>{data[i].data}</td>
+          </tr> */}
+  if(data.length == undefined){
+    return(
+    <table className={styles.TabelaFundo}>
+      <thead className={styles.Thead}>
+        <tr>
+          <td>Cliente</td>
+          <td>Número do cliente</td>
+          <td>Data de Envio</td>
+        </tr>
+      </thead>
+      <tbody className={styles.Tbody} id='Tbody'>
+      </tbody>
+    </table>
+    )
+  }
+  if(data.length == 0){
+    var resultado = document.getElementById("Tbody").innerHTML = '<tr><td className={styles.Td}>Nro Não Encontrado</td><td className={styles.Td}>Nro Não Encontrado</td><td className={styles.Td}>Nro Não Encontrado</td></tr>'
+    return resultado;
+  }
+  if(data.length > 0){
+    var resultado = [];
+    for(var i=0;i<data.length;i++){
+      resultado[i] = document.getElementById("Tbody").innerHTML = "<tr key={Tr"+[i]+"}><td className={"+styles.Td+"}>"+data[i].nome+"</td><td className={"+styles.Td+"}>"+data[i].nro+"</td><td className={"+styles.Td+"}>"+data[i].data+"</td></tr>";
+      return resultado;
+    }
     
+  }
+  
+// return(
+//     <table className={styles.TabelaFundo}>
+//       <thead className={styles.Thead}>
+//         <tr>
+//           <td>Cliente</td>
+//           <td>Número do cliente</td>
+//           <td>Data de Envio</td>
+//         </tr>
+//       </thead>
+//       <tbody className={styles.Tbody}>
+//         <tr>
+//           <td></td>
+//           <td></td>
+//           <td></td>
+//         </tr>
+//       </tbody>
+//     </table>
+//   )
+  
 }
 
 export default tabelaSMS;

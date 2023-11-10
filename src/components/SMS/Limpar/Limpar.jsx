@@ -1,9 +1,15 @@
 import stylesLimpar from './Limpar.module.css';
 
 export default function buttonLimpar() {
+  const handleClick = (e) => {
+    e.preventDefault();
+    document.getElementById("InputNro").value = '';
+    document.getElementById("InputDataInicio").value = '';
+    document.getElementById("InputDataFim").value = '';
+  }
   return (
     <div className={stylesLimpar.DivLimpar}>
-      <button className={stylesLimpar.ButtonLimpar}>Limpar</button>
+      <button onClick={handleClick} className={stylesLimpar.ButtonLimpar}>Limpar</button>
     </div>
   );
 }
