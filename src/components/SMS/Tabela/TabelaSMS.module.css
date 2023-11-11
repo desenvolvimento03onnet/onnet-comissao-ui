@@ -1,32 +1,47 @@
 .TabelaFundo{
-    position: relative;
-    border: 10px;
+    position: sticky;
+    table-layout: fixed;
+    border: 10px 0px 0px 0px;
     border-color: #008000;
     box-shadow: 1px 1px 1px 1px;
     background-color: transparent;
-    overflow: hidden;
     width: 90%;
     height: 90%;
     border-radius: 30px;
     font-size: 25px;
     max-height: 100%;
+    overflow: hidden;
+    border-collapse: collapse;
 }
 .Thead{
     color: white;
     align-items: center;
     text-align: center;
     font-weight: bold;
+    overflow: auto;
     height: 25%;
+    position: sticky;
+    top: 0%;
     background-color:#56bb44;
+}
+.Th{
+    position: sticky;
+    top: 0%;
 }
 .Tbody{
     background-color:#D3D3D3;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: auto;
 }
 
 .Td{
+    justify-content: center;
+    align-items: center;
     text-align: center;
     width: 33%;
-    height: 10%;
+    height: 5%;
 }
 
 .Spinner{
