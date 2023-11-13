@@ -13,6 +13,10 @@
     border-radius: 30px;
     box-sizing: border-box;
     background-color: #56bb44;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    text-justify: center;
     color: white;
 }
 

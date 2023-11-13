@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
-import style from './NavBar.module.css'
+import style from './NavBarResumido.module.css'
 
-export default function NavBar(){
+export default function NavBarResumido(){
     return (
         <div className={style.Cards}>
              <Link to="/PageSMS" className={style.Card}>
@@ -22,21 +22,6 @@ export default function NavBar(){
             <Link to="/PageClientesPorCaixa" className={style.Card}>
                 <div>
                     Clientes Por Caixa
-                </div>
-            </Link>
-            <Link to="/PageComissaoTotal" className={style.Card}>
-                <div>
-                    Comissão Total
-                </div>
-            </Link>
-            <Link to="/PageComissaoVenda" className={style.Card}>
-                <div>
-                    Comissão Venda
-                </div>
-            </Link>
-            <Link to="/PageComissaoRenovacao" className={style.Card}>
-                <div>
-                    Comissão Renovação
                 </div>
             </Link>
         </div>

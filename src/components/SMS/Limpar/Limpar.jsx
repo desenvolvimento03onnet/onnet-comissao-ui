@@ -6,6 +6,7 @@ export default function buttonLimpar() {
     document.getElementById("InputNro").value = '';
     document.getElementById("InputDataInicio").value = '';
     document.getElementById("InputDataFim").value = '';
+    document.getElementById("Tbody").innerHTML = '';
   }
   return (
     <div className={stylesLimpar.DivLimpar}>

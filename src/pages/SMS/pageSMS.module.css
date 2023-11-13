@@ -47,14 +47,12 @@
 }
 .Baixo{
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     bottom: 0%;
-    width: 100%;
+    left: 0%;
     height: 30%;
+    width: 100%;
     background-color: white;
     border-radius: 0px 0px 30px 30px;
-    max-height: 30%;
-    overflow: hidden;
+    max-height: 100%;
+    overflow: scroll;
 }

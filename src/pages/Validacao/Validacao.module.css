@@ -1,0 +1,27 @@
+.DivValidacao{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+}
+.InputValidacao{
+    text-align: center;
+    border-radius: 30px;
+    border: 2px red solid;
+    width: 30%;
+    height: 50%;
+    color: red;
+}
+.InputValidacao::placeholder{
+    color: red;
+}
+.ButtonValidacao{
+    text-align: center;
+    border-radius: 30px;
+    border: 2px red solid;
+    width: 20%;
+    height: 30%;
+    color: red;
+}

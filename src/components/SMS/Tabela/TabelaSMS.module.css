@@ -1,5 +1,6 @@
-.TabelaFundo{
-    position: sticky;
+ .TabelaFundo{
+    border-collapse: collapse;
+    position: relative;
     table-layout: fixed;
     border: 10px 0px 0px 0px;
     border-color: #008000;
@@ -7,54 +8,38 @@
     background-color: transparent;
     width: 90%;
     height: 90%;
+    left: 5%;
+    top: 4%;
     border-radius: 30px;
     font-size: 25px;
-    max-height: 100%;
     overflow: hidden;
-    border-collapse: collapse;
 }
 .Thead{
     color: white;
     align-items: center;
     text-align: center;
     font-weight: bold;
-    overflow: auto;
+    overflow-y: auto;
     height: 25%;
-    position: sticky;
     top: 0%;
+    position: sticky;
     background-color:#56bb44;
 }
-.Th{
+.Thead .Th{
+    border: 1px white solid;
     position: sticky;
-    top: 0%;
+    top: 0px;
 }
 .Tbody{
+    top: 5%;
+    height: 80%;
+    width: 100%;
     background-color:#D3D3D3;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
-    overflow: auto;
+    overflow-y: auto;
+    border-color: black;
+    border-width: 2px;
+    
 }
-
-.Td{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 33%;
-    height: 5%;
-}
-
-.Spinner{
-    width: 56px;
-   height: 56px;
-   border-radius: 50%;
-   background: conic-gradient(#0000 10%,#474bff);
-   -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 9px),#000 0);
-   animation: spinner-zp9dbg 1s infinite linear;
-}
-
-@keyframes spinner-zp9dbg {
-    to {
-       transform: rotate(1turn);
-    }
- }
