@@ -9,7 +9,7 @@ export default function NavBarResumido(){
                     Consulta SMS
                 </div>
             </Link>
-            <Link to="/PageQntContratos" className={style.Card}>
+            <Link to="/PageVencimento" className={style.Card}>
                 <div>
                     Quantidade de Contratos Por Data de Vencimento
                 </div>
