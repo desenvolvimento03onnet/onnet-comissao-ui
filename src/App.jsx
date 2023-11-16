@@ -4,7 +4,9 @@ import PageSMS from "./pages/SMS/pageSMS";
 import NavBar from "./pages/NavBar/NavBar";
 import NavBarResumido from "./pages/NavBarResumido/NavBarResumido";
 import Validacao from "./pages/Validacao/Validacao"
-import Vencimento from "./pages/Vencimento/pageVencimento";
+import PageVencimento from "./pages/Vencimento/pageVencimento";
+import PageAtivos from "./pages/Ativos/pageAtivos";
+import PageCaixa from "./pages/Caixa/pageCaixa";
 
 function App() {
   return (
@@ -14,7 +16,9 @@ function App() {
         <Route path="/Navbar" Component={NavBar} />
         <Route path="/NavbarResumido" Component={NavBarResumido} />
         <Route path="/PageSMS" Component={PageSMS} />
-        <Route path="/PageVencimento" Component={Vencimento} />
+        <Route path="/PageVencimento" Component={PageVencimento} />
+        <Route path="/PageQntContratosAtivos" Component={PageAtivos} />
+        <Route path="/PageClientesPorCaixa" Component={PageCaixa} />
       </Routes>
     </Router>
   );

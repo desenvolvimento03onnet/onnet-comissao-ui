@@ -1,0 +1,45 @@
+ .TabelaFundo{
+    border-collapse: collapse;
+    position: relative;
+    table-layout: fixed;
+    border: 10px 0px 0px 0px;
+    border-color: #008000;
+    box-shadow: 1px 1px 1px 1px;
+    background-color: transparent;
+    width: 90%;
+    height: 90%;
+    left: 5%;
+    top: 4%;
+    border-radius: 30px;
+    font-size: 25px;
+    overflow: hidden;
+}
+.Thead{
+    color: white;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    overflow-y: auto;
+    height: 25%;
+    top: 0%;
+    position: sticky;
+    background-color:grey;
+}
+.Thead .Th{
+    border: 1px white solid;
+    position: sticky;
+    top: 0px;
+}
+.Tbody{
+    top: 5%;
+    height: 80%;
+    width: 100%;
+    background-color:#D3D3D3;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    overflow-y: auto;
+    border-color: black;
+    border-width: 2px;
+    
+}
