@@ -4,7 +4,8 @@ import LoadVencimento from "../../../services/loadVencimento";
 export default function ButtonPesquisar() {
   const handleClick = (e) => {
     e.preventDefault();
-    var datasVencimento = document.getElementById("valorSelect").value;
+    var datasVencimento = document.getElementById("valorSelect").value.split(',');
+    datasVencimento.sort((a, b) => a - b);
     var dataInicio = document.getElementById("InputDataInicio").value;
     var dataFim = document.getElementById("InputDataFim").value;
     if(datasVencimento == '' || dataInicio == '' || dataFim == ''){

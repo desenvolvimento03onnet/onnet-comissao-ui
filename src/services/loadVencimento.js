@@ -4,8 +4,8 @@ import tabelaVencimento from '../components/Vencimento/Tabela/TabelaVencimento';
 export default function Load(diasVencimento, dtInicio, dtFim) {
   var datas = [];
   var junta = '';
-  for(var i=0;i<diasVencimento.split(/,/).length;i++){
-    datas[i] = 'diasVencimento='+diasVencimento.split(/,/)[i]+'&';
+  for(var i=0;i<diasVencimento.length;i++){
+    datas[i] = 'diasVencimento='+diasVencimento[i]+'&';
     junta+=datas[i];
   }
   var url = `http://localhost:3000/api/QntContratos?`+junta+`dataInicio=`+dtInicio+`&dataFim=`+dtFim;

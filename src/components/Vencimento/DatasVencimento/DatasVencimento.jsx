@@ -46,11 +46,11 @@ export default function inputDatasVencimento() {
     setUserChoice(Array.isArray(e) ? e.map(x => x.value) : []);
   };
   
-  var teste = options.filter(obj => userChoice.includes(obj.value));
-
+  var valor = options.filter(obj => userChoice.includes(obj.value));
+  console.log(userChoice);
   return (
     <div className={stylesDatasVencimento.DivDatasVencimento}>
-      <Select isMulti isClearable options={options} onChange={handleChange} className={stylesDatasVencimento.SelectDatasVencimento} classNamePrefix="select" placeholder="Datas de Vencimento" closeMenuOnSelect={false} components={animatedComponents} id='ComboBoxDatasVencimento' value={teste} />
+      <Select isMulti isClearable options={options} onChange={handleChange} className={stylesDatasVencimento.SelectDatasVencimento} classNamePrefix="select" placeholder="Datas de Vencimento" closeMenuOnSelect={false} components={animatedComponents} id='ComboBoxDatasVencimento' value={valor} />
       <input type='text' id='valorSelect' onChange={handleChange} value={userChoice} hidden />
     </div>
   );
