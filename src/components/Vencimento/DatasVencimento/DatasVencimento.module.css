@@ -1,0 +1,31 @@
+.DivDatasVencimento{
+    align-items: center;
+    justify-content: center;
+    top: 0vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.SelectDatasVencimento{
+    width: 70%;
+    padding: 15px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    background-color: #8B0000;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    text-justify: center;
+}
+.SelectDatasVencimento:after{
+    background-color: #8B0000;
+}
+.SelectDatasVencimento option{
+    background-color: #8B0000;
+}
+.SelectDatasVencimento::placeholder{
+    color: white;
+    font-weight: bold;
+    background-color: #8B0000;
+}

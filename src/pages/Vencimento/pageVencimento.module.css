@@ -6,7 +6,7 @@
     border-radius: 30px;
     background-color: white;
     box-shadow: 2px 2px 2px 2px;
-    width: 60vw;
+    width: 70vw;
     height: 90vh;
     flex-direction: column;
 }
@@ -54,5 +54,5 @@
     background-color: white;
     border-radius: 0px 0px 30px 30px;
     max-height: 100%;
-    overflow: scroll;
+    overflow-y: scroll;
 }

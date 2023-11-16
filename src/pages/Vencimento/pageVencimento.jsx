@@ -1,11 +1,11 @@
 import styles from "./pageVencimento.module.css";
-import TabelaSMS from "../../components/SMS/Tabela/TabelaSMS";
-import InputNroSMS from "../../components/SMS/Nro/Nro";
-import InputDataInicio from "../../components/SMS/DataInicio/DataInicio";
-import InputDataFim from "../../components/SMS/DataFim/DataFim";
+import TabelaVencimento from "../../components/Vencimento/Tabela/TabelaVencimento";
+import InputDatasVencimento from "../../components/Vencimento/DatasVencimento/DatasVencimento";
+import InputDataInicio from "../../components/Vencimento/DataInicio/DataInicio";
+import InputDataFim from "../../components/Vencimento/DataFim/DataFim";
 import ImgLogo from "../../components/SMS/Logo/Logo";
-import ButtonLimpar from "../../components/SMS/Limpar/Limpar";
-import ButtonPesquisar from "../../components/SMS/Pesquisar/Pesquisar";
+import ButtonLimpar from "../../components/Vencimento/Limpar/Limpar";
+import ButtonPesquisar from "../../components/Vencimento/Pesquisar/Pesquisar";
 
 function pageVencimento() {
   return (
@@ -15,7 +15,7 @@ function pageVencimento() {
           <ImgLogo />
         </div>
         <div className={styles.Direita}>
-          <InputNroSMS />
+          <InputDatasVencimento />
           <InputDataInicio />
           <InputDataFim />
           <div className={styles.Botoes}>
@@ -25,7 +25,7 @@ function pageVencimento() {
         </div>
       </div>
       <div className={styles.Baixo}>
-        <TabelaSMS />
+        <TabelaVencimento />
       </div>
     </div>
   );
