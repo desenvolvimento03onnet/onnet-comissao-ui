@@ -2,10 +2,75 @@
     width: 100vw;
     height: 100vh;
 }
+.Main{
+    display: flex;
+    height: 80%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+.Esquerda{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 33%;
+    height: 80%;
+}
+.Esquerda .Card{
+    border-radius: 30px;
+    background-color: white;
+    width: 40%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    overflow: hidden;
+}
+.Esquerda .Card:nth-child(1), .Direita .Card:nth-child(1), .Footer .Card:nth-child(1){
+    color:green;
+    border: 5px green solid;
+}
+.Esquerda .Card:nth-child(2), .Direita .Card:nth-child(2){
+    color:#DAA520;
+    border: 5px yellow solid;
+}
+.Esquerda .Card:nth-child(3), .Direita .Card:nth-child(3){
+    color:blue;
+    border: 5px blue solid;
+}
+.Direita{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 33%;
+    height: 80%;
+}
+.Direita .Card{
+    border-radius: 30px;
+    background-color: white;
+    width: 40%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    overflow: hidden;
+}
 .Imagem{
     display: flex;
-    height: 50%;
-    width: 100%;
+    height: 80%;
+    width: 30%;
     align-items: center;
     justify-content: center;
 }
@@ -14,7 +79,7 @@
     align-items: center;
     justify-content: center;
     height: 90%;
-    width: 12%;
+    width: 50%;
     background-color: black;
     border-radius: 5em 5em 5em 5em /2.25em;
     flex-direction: column;
@@ -24,7 +89,7 @@
 }
 .Testa{
     position: absolute;
-    top: 7.2vh;
+    top: 17.2vh;
     height: 4.5vh;
     width: 12vw;
     z-index: 3;
@@ -32,7 +97,7 @@
 }
 .Cabelo{
     position: absolute;
-    top: 0;
+    top: 5vh;
     height: 10vh;
     width: 11vw;
     display: flex;
@@ -59,7 +124,7 @@
 
 .LogoDiv{
     position: absolute;
-    top: 7.2vh;
+    top: 18.2vh;
     height: 7.2vh;
     width: 12vw;
     display: flex;
@@ -148,7 +213,7 @@
     align-items: center;
     width: 60%;
     background-color: #800000;
-    height: 50%;
+    height: 5%;
     border-radius: 0 0 100% 100%;
     flex-direction: column;
     overflow: hidden;
@@ -172,16 +237,17 @@
     background-color: red;
     border-radius: 50% 50% 0 0;
 }
-.Cards{
+.Footer{
     display: flex;
-    height: 50%;
+    height: 20%;
     align-items: center;
     justify-content: space-around;
 }
-.Card{
+.Footer .Card{
     border-radius: 30px;
+    background-color: white;
     width: 12%;
-    height: 25%;
+    height: 65%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -194,25 +260,4 @@
 }
 .Card:hover{
     transform: scale(1.2);
-}
-.Card:nth-child(1){
-    background: linear-gradient(0deg, rgba(0,102,46,1) 0%, rgba(1,176,80,1) 20%, rgba(0,247,112,1) 50%, rgba(1,176,80,1) 80%, rgba(0,102,46,1) 100%);
-}
-.Card:nth-child(2){
-    background: linear-gradient(0deg, rgba(200,197,0,1) 0%, rgba(255,251,0,1) 20%, rgba(255,254,168,1) 50%, rgba(255,251,0,1) 80%, rgba(200,197,0,1) 100%);
-}
-.Card:nth-child(3){
-    background: linear-gradient(0deg, rgba(92,92,92,1) 0%, rgba(171,171,171,1) 20%, rgba(255,255,255,1) 50%, rgba(171,171,171,1) 80%, rgba(92,92,92,1) 100%);
-}
-.Card:nth-child(4){
-    background: linear-gradient(0deg, rgba(0,81,111,1) 0%, rgba(0,176,240,1) 20%, rgba(145,226,255,1) 50%, rgba(0,176,240,1) 80%, rgba(0,81,111,1) 100%);
-}
-.Card:nth-child(5){
-    background: linear-gradient(0deg, rgba(142,21,0,1) 0%, rgba(255,37,0,1) 20%, rgba(255,127,106,1) 50%, rgba(255,37,0,1) 80%, rgba(142,21,0,1) 100%);
-}
-.Card:nth-child(6){
-    background: linear-gradient(0deg, rgba(57,0,102,1) 0%, rgba(111,48,160,1) 20%, rgba(191,109,255,1) 50%, rgba(111,48,160,1) 80%, rgba(57,0,102,1) 100%);
-}
-.Card:nth-child(7){
-    background: linear-gradient(0deg, rgba(102,51,0,1) 0%, rgba(153,102,51,1) 20%, rgba(252,175,98,1) 50%, rgba(153,102,51,1) 80%, rgba(102,51,0,1) 100%);
 }
