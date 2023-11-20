@@ -9,6 +9,7 @@ import PageAtivos from "./pages/Ativos/pageAtivos";
 import PageCaixa from "./pages/Caixa/pageCaixa";
 
 function App() {
+  
   return (
     <Router>
       <Routes>
