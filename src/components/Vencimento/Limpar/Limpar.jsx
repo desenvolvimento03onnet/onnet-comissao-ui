@@ -3,7 +3,8 @@ import stylesLimpar from './Limpar.module.css';
 export default function buttonLimpar() {
   const handleClick = (e) => {
     e.preventDefault();
-    document.getElementById("ComboBoxDatasVencimento").clearSelection;
+    document.getElementById("ComboBoxDatasVencimento");
+    document.getElementById("valorSelect").value = '';
     document.getElementById("InputDataInicio").value = '';
     document.getElementById("InputDataFim").value = '';
     document.getElementById("Tbody").innerHTML = '';

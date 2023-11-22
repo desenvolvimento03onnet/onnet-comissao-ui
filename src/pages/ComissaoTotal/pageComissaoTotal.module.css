@@ -1,0 +1,61 @@
+.Card{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 0;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px;
+    width: 95vw;
+    height: 90vh;
+    flex-direction: column;
+    overflow: hidden;
+}
+.Cima{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    top: 0%;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+    background-color: transparent;
+    overflow: hidden;
+}
+.Parte1, .Parte2, .Parte3{
+    height: 100%;
+    width: 33%;
+    border-radius: 30px;
+    display: flex;
+    text-align: center;
+    word-break: break-all;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 2px black solid;
+}
+.Parte1{
+    background-color: lightblue;
+}
+.Parte2{
+    background-color: lightcyan;
+}
+.Parte3{
+    background-color: lightpink;
+}
+.Botoes{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    height: 10%;
+}
+.Baixo{
+    position: relative;
+    left: 0%;
+    height: 30%;
+    width: 100%;
+    background-color: white;
+    border-radius: 0px 0px 30px 30px;
+    overflow-y: scroll;
+}

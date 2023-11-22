@@ -12,12 +12,13 @@
     padding: 15px;
     border-radius: 30px;
     box-sizing: border-box;
-    background-color: #56bb44;
+    background-color: white;
+    border: 5px #eac12e solid;
+    color: #eac12e;
     font-weight: bold;
     font-size: 20px;
     text-align: center;
     text-justify: center;
-    color: white;
 }
 
 .InputNro::placeholder{
@@ -25,5 +26,5 @@
     font-size: 20px;
     text-align: center;
     text-justify: center;
-    color: white;
+    color: #eac12e;
 }

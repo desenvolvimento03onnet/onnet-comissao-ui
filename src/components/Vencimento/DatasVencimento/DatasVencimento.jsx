@@ -45,9 +45,12 @@ export default function inputDatasVencimento() {
   const handleChange = (e) => {
     setUserChoice(Array.isArray(e) ? e.map(x => x.value) : []);
   };
-  
+
+  if(userChoice != ''){
+    document.getElementById("SpanDia").innerText = userChoice;
+  }
+
   var valor = options.filter(obj => userChoice.includes(obj.value));
-  console.log(userChoice);
   return (
     <div className={stylesDatasVencimento.DivDatasVencimento}>
       <Select isMulti isClearable options={options} onChange={handleChange} className={stylesDatasVencimento.SelectDatasVencimento} classNamePrefix="select" placeholder="Datas de Vencimento" closeMenuOnSelect={false} components={animatedComponents} id='ComboBoxDatasVencimento' value={valor} />

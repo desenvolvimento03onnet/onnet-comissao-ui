@@ -3,9 +3,9 @@
     position: relative;
     table-layout: fixed;
     border: 10px 0px 0px 0px;
-    border-color: #008000;
+    border-color: #eac12e;
     box-shadow: 1px 1px 1px 1px;
-    background-color: transparent;
+    background-color: white;
     width: 90%;
     height: 90%;
     left: 5%;
@@ -23,7 +23,7 @@
     height: 25%;
     top: 0%;
     position: sticky;
-    background-color:#56bb44;
+    background-color:#eac12e;
 }
 .Thead .Th{
     border: 1px white solid;

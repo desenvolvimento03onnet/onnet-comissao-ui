@@ -1,9 +1,8 @@
 import { Link } from 'react-router-dom';
 import style from './NavBar.module.css';
 import imgLogo from "../../assets/SMS/SMS.png";
-import {useEffect, useState} from 'react';
 
-export default function NavBar(){
+function onload(){
     const pupila = document.querySelector("#olho1");
     const pupila2 = document.querySelector("#olho2");
     document.addEventListener("mousemove", (e) => {
@@ -16,6 +15,9 @@ export default function NavBar(){
         pupila2.style.left = x + "%";
         pupila2.style.top = y + "%";
     });
+}
+export default function NavBar(){
+    window.addEventListener("load", onload, false);
     function mouseOver(){
         document.getElementById("labios").style.height = "50%";
         document.getElementById("labios").style.transition = "0.2s";

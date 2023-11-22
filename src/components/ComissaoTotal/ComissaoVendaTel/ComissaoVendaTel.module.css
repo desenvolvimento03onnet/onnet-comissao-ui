@@ -1,0 +1,29 @@
+.DivVendaTel{
+    align-items: center;
+    justify-content: center;
+    top: 0vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+.InputVendaTel{
+    display: flex;
+    width: 70%;
+    padding: 15px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    background-color: #56bb44;
+    font-weight: bold;
+    font-size: 100%;
+    text-align: center;
+    text-justify: center;
+    color: white;
+}
+
+.InputVendaTel::placeholder{
+    font-weight: bold;
+    font-size: 100%;
+    text-align: center;
+    text-justify: center;
+    color: white;
+}

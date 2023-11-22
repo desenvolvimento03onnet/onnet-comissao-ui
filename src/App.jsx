@@ -7,6 +7,7 @@ import Validacao from "./pages/Validacao/Validacao"
 import PageVencimento from "./pages/Vencimento/pageVencimento";
 import PageAtivos from "./pages/Ativos/pageAtivos";
 import PageCaixa from "./pages/Caixa/pageCaixa";
+import PageComissaoTotal from "./pages/ComissaoTotal/pageComissaoTotal";
 
 function App() {
   
@@ -20,6 +21,7 @@ function App() {
         <Route path="/PageVencimento" Component={PageVencimento} />
         <Route path="/PageQntContratosAtivos" Component={PageAtivos} />
         <Route path="/PageClientesPorCaixa" Component={PageCaixa} />
+        <Route path="/PageComissaoTotal" Component={PageComissaoTotal} />
       </Routes>
     </Router>
   );

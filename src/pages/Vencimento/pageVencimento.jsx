@@ -3,7 +3,7 @@ import TabelaVencimento from "../../components/Vencimento/Tabela/TabelaVenciment
 import InputDatasVencimento from "../../components/Vencimento/DatasVencimento/DatasVencimento";
 import InputDataInicio from "../../components/Vencimento/DataInicio/DataInicio";
 import InputDataFim from "../../components/Vencimento/DataFim/DataFim";
-import ImgLogo from "../../components/SMS/Logo/Logo";
+import ImgLogo from "../../components/Vencimento/Logo/Logo";
 import ButtonLimpar from "../../components/Vencimento/Limpar/Limpar";
 import ButtonPesquisar from "../../components/Vencimento/Pesquisar/Pesquisar";
 
