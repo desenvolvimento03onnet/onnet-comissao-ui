@@ -5,13 +5,13 @@ export default function inputFrente2() {
   const [valorInput, setValorInput] = useState('');
 
   const handleChange = (event) => {
-    const limit = 8;
+    const limit = 3;
     setValorInput(event.target.value.slice(0, limit));
   };
   
   return (
     <div className={stylesFrente2.DivFrente2}>
-      <input value={valorInput} onChange={handleChange} id="InputRenovacaoFrente2" className={stylesFrente2.InputFrente2} type="number" placeholder='Digite o valor da Renovação' />
+      <input value={valorInput} onChange={handleChange} id="InputRenovacaoFrente2" className={stylesFrente2.InputFrente2} type="number" placeholder='Digite a porcentagem da Renovação' />
     </div>
   );
 }
