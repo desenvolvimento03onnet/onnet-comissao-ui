@@ -16,7 +16,9 @@ function onload(){
         pupila2.style.top = y + "%";
     });
 }
+
 export default function NavBar(){
+   
     window.addEventListener("load", onload, false);
     function mouseOver(){
         document.getElementById("labios").style.height = "50%";
@@ -25,6 +27,7 @@ export default function NavBar(){
     function mouseOut(){
         document.getElementById("labios").style.height = "5%";
     }
+    
     return (
         <div className={style.Tela}>
             <div className={style.Main}>
@@ -45,6 +48,7 @@ export default function NavBar(){
                         </div>
                     </Link>
                 </div>
+                <div className={style.Fala} id='DivFala'></div>
                 <div className={style.Imagem}>
                     <div className={style.Container}>
                         <div className={style.Espaco}></div>
@@ -113,4 +117,5 @@ export default function NavBar(){
             </div>
         </div>
     );
+    
 }

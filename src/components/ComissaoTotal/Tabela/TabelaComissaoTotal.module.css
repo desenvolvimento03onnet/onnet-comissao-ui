@@ -1,3 +1,19 @@
+ .DivFundo{
+    top: 0%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+ }
+ .DivBotao{
+    display: flex;
+    position: relative;
+    height: 30%;
+    justify-content: center;
+    align-items: center;
+ }
  .TabelaFundo{
     border-collapse: collapse;
     position: relative;
@@ -7,11 +23,11 @@
     box-shadow: 1px 1px 1px 1px;
     background-color: transparent;
     width: 97%;
-    height: 90%;
-    left: 2%;
-    top: 4%;
+    height: 70%;
+    max-height: 70%;
+    top: 0%;
     border-radius: 30px;
-    font-size: 25px;
+    font-size: 120%;
     overflow: hidden;
 }
 .Thead{

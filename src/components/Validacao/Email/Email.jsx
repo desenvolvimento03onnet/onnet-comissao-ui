@@ -8,6 +8,7 @@ export default function EmailValidacao(){
     const handleChange = (event) => {
         setValorInput(event.target.value);
     };
+    
     return (
         <div className={style.DivValidacao}>
             <input value={valorInput} onChange={handleChange} id='InputEmail' className={style.InputValidacao} type="email" placeholder='Insira Seu E-mail Aqui'/>

@@ -26,6 +26,8 @@ export default function ButtonPesquisar() {
       alert("Insira o valor em Todos os Campos");
     }else{
       LoadComissaoTotal((ComissaoVendaTV.replace(',','.')), (ComissaoVendaTel.replace(',','.')), (ComissaoVendaRecorrente.replace(',','.')), (ComissaoVenda/100), (Dia01.replace(',','.')), (Dia02.replace(',','.')), (RenovacaoTVFrente.replace(',','.')), (RenovacaoTVTele.replace(',','.')), (RenovacaoTelFrente.replace(',','.')), (RenovacaoTelTele.replace(',','.')), (RenovacaoRecorrenteFrente.replace(',','.')),(RenovacaoRecorrenteTele.replace(',','.')), (RenovacaoFrente2/100), (RenovacaoFrente50/100), (RenovacaoTele3.replace(',','.')), (RenovacaoTele4.replace(',','.')), dataInicio, dataFim);
+      var resultado = document.getElementById("Tbody").innerHTML = '<tr><td colspan="18"><div class="'+stylesPesquisar.DivCarregar+'"><div class="'+stylesPesquisar.Carregar+'"></div></div></td></tr>'
+      return resultado;
     }
   }
   return (

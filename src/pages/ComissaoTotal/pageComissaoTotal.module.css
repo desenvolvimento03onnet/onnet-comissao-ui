@@ -23,7 +23,7 @@
     overflow: hidden;
 }
 .Parte1, .Parte2, .Parte3{
-    height: 100%;
+    height: 97%;
     width: 33%;
     border-radius: 30px;
     display: flex;
@@ -32,6 +32,13 @@
     flex-direction: column;
     justify-content: space-around;
     border: 2px black solid;
+}
+.Parte1 h1, .Parte2 h1, .Parte3 h1{
+    color: white;
+    text-shadow: -1px 1px 0 #000, 
+                          1px 1px 0 #000, 
+                         1px -1px 0 #000, 
+                        -1px -1px 0 #000; 
 }
 .Parte1{
     background-color: lightblue;
