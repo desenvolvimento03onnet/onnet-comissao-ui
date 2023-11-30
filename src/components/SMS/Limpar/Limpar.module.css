@@ -12,13 +12,13 @@
     padding: 15px;
     border-radius: 30px;
     box-sizing: border-box;
-    background-color: white;
-    border: 5px #eac12e solid;
+    background-color: transparent;
+    border: 5px white solid;
     font-weight: bold;
     font-size: 20px;
     text-align: center;
     text-justify: center;
     align-items: center;
     justify-content: center;
-    color: #eac12e;
+    color: white;
 }

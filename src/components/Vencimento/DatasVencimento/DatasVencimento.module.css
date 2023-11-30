@@ -18,14 +18,3 @@
     text-align: center;
     text-justify: center;
 }
-.SelectDatasVencimento:after{
-    background-color: #8B0000;
-}
-.SelectDatasVencimento option{
-    background-color: #8B0000;
-}
-.SelectDatasVencimento::placeholder{
-    color: white;
-    font-weight: bold;
-    background-color: #8B0000;
-}

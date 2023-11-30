@@ -3,6 +3,7 @@ import TabelaAtivos from "../../components/Ativos/Tabela/TabelaAtivos";
 import InputDataFim from "../../components/Ativos/DataFim/DataFim";
 import ImgLogo from "../../components/SMS/Logo/Logo";
 import ButtonLimpar from "../../components/Ativos/Limpar/Limpar";
+import ButtonVoltar from "../../components/Ativos/Voltar/Voltar";
 import ButtonPesquisar from "../../components/Ativos/Pesquisar/Pesquisar";
 
 function pageAtivos() {
@@ -14,10 +15,13 @@ function pageAtivos() {
         </div>
         <div className={styles.Direita}>
           <InputDataFim />
-          <div className={styles.Botoes}>
-            <ButtonLimpar />
-            <ButtonPesquisar />
-          </div>
+        </div>
+      </div>
+      <div className={styles.Meio}>
+        <div className={styles.Botoes}>
+          <ButtonVoltar />
+          <ButtonLimpar />
+          <ButtonPesquisar />
         </div>
       </div>
       <div className={styles.Baixo}>

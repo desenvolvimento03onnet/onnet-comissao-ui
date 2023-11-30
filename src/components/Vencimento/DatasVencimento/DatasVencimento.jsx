@@ -4,6 +4,48 @@ import { useState } from "react";
 import makeAnimated from 'react-select/animated';
 
 export default function inputDatasVencimento() {
+
+  const customStyles = {
+    placeholder: (defaultStyles) => {
+        return {
+            ...defaultStyles,
+            color: '#ffffff',
+        }
+    },
+    control: (base, state) => ({
+      ...base,
+      background: "transparent",
+      color: '#F0F8FF',
+      // Overwrittes the different states of border
+      borderColor: state.isFocused ? "white" : "white",
+      // Removes weird border around container
+      boxShadow: state.isFocused ? null : null,
+      "&:hover": {
+        // Overwrittes the different states of border
+        borderColor: state.isFocused ? "black" : "white"
+      }
+    }),
+    menuList: styles => ({
+      ...styles,
+      background: 'transparent',
+      color: '#ffffff'
+    }),
+    option: (styles, {isFocused, isSelected}) => ({
+        ...styles,
+        background: isFocused
+            ? 'black'
+            : isSelected
+                ? 'black'
+                : undefined,
+        zIndex: 1
+    }),
+    menu: base => ({
+        ...base,
+        zIndex: 100,
+        background: "transparent"
+    })
+  };
+
   const [userChoice, setUserChoice] = useState("");
 
   const animatedComponents = makeAnimated();
@@ -53,7 +95,7 @@ export default function inputDatasVencimento() {
   var valor = options.filter(obj => userChoice.includes(obj.value));
   return (
     <div className={stylesDatasVencimento.DivDatasVencimento}>
-      <Select isMulti isClearable options={options} onChange={handleChange} className={stylesDatasVencimento.SelectDatasVencimento} classNamePrefix="select" placeholder="Datas de Vencimento" closeMenuOnSelect={false} components={animatedComponents} id='ComboBoxDatasVencimento' value={valor} />
+      <Select isMulti isClearable options={options} onChange={handleChange} styles={customStyles} classNamePrefix="select" placeholder=" -- Datas de Vencimento -- " closeMenuOnSelect={false} components={animatedComponents} id='ComboBoxDatasVencimento' value={valor} />
       <input type='text' id='valorSelect' onChange={handleChange} value={userChoice} hidden />
     </div>
   );

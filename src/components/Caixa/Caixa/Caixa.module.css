@@ -12,12 +12,13 @@
     padding: 15px;
     border-radius: 30px;
     box-sizing: border-box;
-    background-color: grey;
+    background-color: transparent;
     font-weight: bold;
     font-size: 20px;
     text-align: center;
     text-justify: center;
     color: white;
+    border: 5px white solid;
 }
 
 .InputCaixa::placeholder{

@@ -9,6 +9,8 @@ import PageAtivos from "./pages/Ativos/pageAtivos";
 import PageCaixa from "./pages/Caixa/pageCaixa";
 import PageComissaoTotal from "./pages/ComissaoTotal/pageComissaoTotal";
 
+
+
 function App() {
   
   return (

@@ -3,6 +3,7 @@ import TabelaCaixa from "../../components/Caixa/Tabela/TabelaCaixa";
 import InputCaixa from "../../components/Caixa/Caixa/Caixa";
 import ImgLogo from "../../components/SMS/Logo/Logo";
 import ButtonLimpar from "../../components/Caixa/Limpar/Limpar";
+import ButtonVoltar from "../../components/Caixa/Voltar/Voltar";
 import ButtonPesquisar from "../../components/Caixa/Pesquisar/Pesquisar";
 
 function pageCaixa() {
@@ -14,11 +15,14 @@ function pageCaixa() {
         </div>
         <div className={styles.Direita}>
           <InputCaixa />
+        </div>
+      </div>
+      <div className={styles.Meio}>
           <div className={styles.Botoes}>
+            <ButtonVoltar />
             <ButtonLimpar />
             <ButtonPesquisar />
           </div>
-        </div>
       </div>
       <div className={styles.Baixo}>
         <TabelaCaixa />

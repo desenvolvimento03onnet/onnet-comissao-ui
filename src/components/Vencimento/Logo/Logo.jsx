@@ -1,4 +1,5 @@
 import style from './Logo.module.css';
+import { useEffect } from 'react';
 
 function onload(){
   const pupila = document.querySelector("#olho1");
@@ -16,6 +17,9 @@ function onload(){
 }
 
 export default function imgLogo() {
+    useEffect(() => {
+        onload()
+    })
   window.addEventListener("load", onload, false);
   return (
             <div className={style.Main}>

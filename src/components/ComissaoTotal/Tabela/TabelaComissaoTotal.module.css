@@ -21,7 +21,7 @@
     border: 10px 0px 0px 0px;
     border-color: #008000;
     box-shadow: 1px 1px 1px 1px;
-    background-color: transparent;
+    background-color: white;
     width: 97%;
     height: 70%;
     max-height: 70%;
@@ -31,7 +31,7 @@
     overflow: hidden;
 }
 .Thead{
-    color: white;
+    color: black;
     align-items: center;
     text-align: center;
     font-weight: bold;
@@ -39,7 +39,7 @@
     height: 25%;
     top: 0%;
     position: sticky;
-    background-color:#56bb44;
+    background-color:white;
 }
 .Thead .Th{
     word-break: break-word;
@@ -59,4 +59,20 @@
     border-color: black;
     border-width: 2px;
     
+}
+.DivBotao{
+    width: 100%;
+}
+.ButtonDownload{
+    background-color: transparent;
+    color: white;
+    height: 70%;
+    width: 10%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: 5px white solid;
+    font-size: 120%;
 }

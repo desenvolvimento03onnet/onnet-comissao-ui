@@ -9,5 +9,11 @@ body {
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background-color: #56bb44;
+  background: linear-gradient(270deg, #05b62b, #00bd5b, #00bd84);
+  animation: AnimationName 30s ease infinite;
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
 }

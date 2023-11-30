@@ -3,9 +3,9 @@
     position: relative;
     table-layout: fixed;
     border: 10px 0px 0px 0px;
-    border-color: #f5ed04;
+    border-color: white;
     box-shadow: 1px 1px 1px 1px;
-    background-color: transparent;
+    background-color: white;
     width: 90%;
     height: 90%;
     left: 5%;
@@ -15,7 +15,7 @@
     overflow: hidden;
 }
 .Thead{
-    color: white;
+    color: black;
     align-items: center;
     text-align: center;
     font-weight: bold;
@@ -23,7 +23,7 @@
     height: 25%;
     top: 0%;
     position: sticky;
-    background-color:#f5ed04;
+    background-color:white;
 }
 .Thead .Th{
     border: 1px white solid;
@@ -34,7 +34,7 @@
     top: 5%;
     height: 80%;
     width: 100%;
-    background-color:#D3D3D3;
+    background-color:white;
     justify-content: space-around;
     align-items: center;
     text-align: center;

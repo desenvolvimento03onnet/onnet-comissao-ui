@@ -7,10 +7,13 @@
     justify-content: space-between;
 }
 .ButtonValidacao{
+    background-color: transparent;
     text-align: center;
     border-radius: 30px;
-    border: 2px red solid;
-    width: 20%;
-    height: 30%;
-    color: red;
+    border: 5px white solid;
+    width: 10%;
+    height: 40%;
+    color: white;
+    font-size: 100%;
+    font-family: 'Times New Roman', Times, serif;
 }

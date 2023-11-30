@@ -12,7 +12,7 @@
     padding: 15px;
     border-radius: 30px;
     box-sizing: border-box;
-    background-color: #8B0000;
+    background-color: transparent;
     font-weight: bold;
     font-size: 20px;
     text-align: center;
@@ -20,4 +20,5 @@
     align-items: center;
     justify-content: center;
     color: white;
+    border: 5px white solid;
 }

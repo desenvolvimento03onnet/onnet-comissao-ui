@@ -5,9 +5,11 @@ import InputDataInicio from "../../components/SMS/DataInicio/DataInicio";
 import InputDataFim from "../../components/SMS/DataFim/DataFim";
 import ImgLogo from "../../components/SMS/Logo/Logo";
 import ButtonLimpar from "../../components/SMS/Limpar/Limpar";
+import ButtonVoltar from "../../components/SMS/Voltar/Voltar";
 import ButtonPesquisar from "../../components/SMS/Pesquisar/Pesquisar";
 
 function pageSMS() {
+  
   return (
     <div className={styles.Card}>
       <div className={styles.Cima}>
@@ -18,11 +20,14 @@ function pageSMS() {
           <InputNroSMS />
           <InputDataInicio />
           <InputDataFim />
-          <div className={styles.Botoes}>
+        </div>
+      </div>
+      <div className={styles.Meio}>
+        <div className={styles.Botoes}>
+            <ButtonVoltar />
             <ButtonLimpar />
             <ButtonPesquisar />
           </div>
-        </div>
       </div>
       <div className={styles.Baixo}>
         <TabelaSMS />

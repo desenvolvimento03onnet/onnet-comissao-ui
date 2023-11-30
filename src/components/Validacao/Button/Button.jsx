@@ -2,7 +2,6 @@ import style from './Button.module.css'
 import { Link } from 'react-router-dom';
 
 export default function ButtonValidacao(){
-    
     const handleClick = (e) => {
         e.preventDefault();
         var email = document.getElementById("InputEmail").value;
@@ -14,7 +13,9 @@ export default function ButtonValidacao(){
             }else{
                 sessionStorage.setItem(0,email);
                 if(email.includes('@onnetmais.com.br')){
-                    window.location.href = '/Navbar';
+                    window.location.href="/NavBar";
+                    var resultado = document.getElementById("DivGeral").innerHTML = '<div class="'+style.DivCarregar+'"><div class="'+style.Carregar+'"></div></div>'
+                    return resultado;
                 } else if(email.includes('@gmail.com') && ( email.includes('vendas') || email.includes('televendas') || email.includes('estoque') || email.includes('desenvolvimento') || email.includes('crm') || email.includes('suporte') || email.includes('sac') || email.includes('retencao') || email.includes('cobranca') || email.includes('contabilidade') || email.includes('caixa') || email.includes('faturamento') || email.includes('financeiro') || email.includes('ativacao') || email.includes('expedicao') || email.includes('auditoria') || email.includes('servicos') || email.includes('rh') || email.includes('redes') || email.includes('pap') || email.includes('servicos'))){
                     window.location.href = '/NavbarResumido';
                 } else {

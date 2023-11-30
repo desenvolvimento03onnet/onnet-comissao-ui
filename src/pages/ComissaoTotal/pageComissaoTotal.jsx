@@ -20,6 +20,7 @@ import InputComissaoRenovacaoTele4 from "../../components/ComissaoTotal/Comissao
 import DataInicio from "../../components/ComissaoTotal/DataInicio/DataInicio";
 import DataFim from "../../components/ComissaoTotal/DataFim/DataFim";
 import ButtonLimpar from "../../components/ComissaoTotal/Limpar/Limpar";
+import ButtonVoltar from "../../components/ComissaoTotal/Voltar/Voltar";
 import ButtonPesquisar from "../../components/ComissaoTotal/Pesquisar/Pesquisar";
 
 function pageComissaoTotal() {
@@ -54,7 +55,8 @@ function pageComissaoTotal() {
           <InputComissaoRenovacaoTele4 />
         </div>
       </div>
-      <div className={styles.Botoes}>
+          <div className={styles.Botoes}>
+            <ButtonVoltar />
             <ButtonLimpar />
             <ButtonPesquisar />
           </div>

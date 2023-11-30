@@ -1,0 +1,30 @@
+.DivVoltar{
+    align-items: center;
+    justify-content: center;
+    top: 0vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+.ButtonVoltar{
+    display: flex;
+    width: 70%;
+    padding: 15px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 5px black solid;
+    font-weight: bold;
+    font-size: 140%;
+    text-align: center;
+    text-justify: center;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+}
+.ButtonVoltar:hover{
+    background-color: #d62000;
+    color: white;
+    border-color: white;
+}

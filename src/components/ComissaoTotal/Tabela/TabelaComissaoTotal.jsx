@@ -2,7 +2,7 @@ import styles from './TabelaComissaoTotal.module.css';
 import csvDownload from 'json-to-csv-export'
 
 var ipAddressesData = [];
-function CSV(dados){
+async function CSV(dados){
   for(var i=0;i<dados.length;i++){
     ipAddressesData[i] = {i:JSON.stringify(dados[i])};
   }
@@ -58,8 +58,8 @@ function tabelaComissaoTotal(data) {
           </tbody>
         </table>
         <div className={styles.DivBotao} id='DivBotao'>
-          <button onClick={() => csvDownload(dataToConvert)}>
-          Download Data
+          <button className={styles.ButtonDownload} onClick={() => csvDownload(dataToConvert)}>
+          Baixar CSV
           </button>
         </div>
       </div>

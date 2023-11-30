@@ -12,10 +12,14 @@
     padding: 15px;
     border-radius: 30px;
     box-sizing: border-box;
-    background-color: #8B0000;
+    background-color: transparent;
     color: white;
     font-weight: bold;
     font-size: 20px;
     text-align: center;
     text-justify: center;
+    border: 5px white solid;
+}
+.InputDataInicio::-webkit-calendar-picker-indicator {
+    filter: invert(100%);
 }

@@ -4,10 +4,10 @@
     justify-content: space-around;
     border: 0;
     border-radius: 30px;
-    background-color: white;
+    background-color: transparent;
     box-shadow: 2px 2px 2px 2px;
-    width: 95vw;
-    height: 90vh;
+    width: 100vw;
+    height: 100vh;
     flex-direction: column;
     overflow: hidden;
 }
@@ -22,8 +22,8 @@
     background-color: transparent;
     overflow: hidden;
 }
-.Parte1, .Parte2, .Parte3{
-    height: 97%;
+.Cima .Parte1, .Cima .Parte2, .Cima .Parte3{
+    height: 100%;
     width: 33%;
     border-radius: 30px;
     display: flex;
@@ -32,22 +32,26 @@
     flex-direction: column;
     justify-content: space-around;
     border: 2px black solid;
+    align-items: center;
 }
-.Parte1 h1, .Parte2 h1, .Parte3 h1{
+.Cima .Parte1 h1, .Cima .Parte2 h1, .Cima .Parte3 h1{
     color: white;
     text-shadow: -1px 1px 0 #000, 
                           1px 1px 0 #000, 
                          1px -1px 0 #000, 
                         -1px -1px 0 #000; 
 }
-.Parte1{
-    background-color: lightblue;
+.Cima .Parte1{
+    background-color: transparent;
+    border: 5px lightblue solid;
 }
-.Parte2{
-    background-color: lightcyan;
+.Cima .Parte2{
+    background-color: transparent;
+    border: 5px lightcyan solid;
 }
-.Parte3{
-    background-color: lightpink;
+.Cima .Parte3{
+    background-color: transparent;
+    border: 5px lightpink solid;
 }
 .Botoes{
     position: relative;
@@ -62,7 +66,7 @@
     left: 0%;
     height: 30%;
     width: 100%;
-    background-color: white;
+    background-color: transparent;
     border-radius: 0px 0px 30px 30px;
     overflow-y: scroll;
 }

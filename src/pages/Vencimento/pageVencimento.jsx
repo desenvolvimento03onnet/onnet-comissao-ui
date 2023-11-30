@@ -5,6 +5,7 @@ import InputDataInicio from "../../components/Vencimento/DataInicio/DataInicio";
 import InputDataFim from "../../components/Vencimento/DataFim/DataFim";
 import ImgLogo from "../../components/Vencimento/Logo/Logo";
 import ButtonLimpar from "../../components/Vencimento/Limpar/Limpar";
+import ButtonVoltar from "../../components/Vencimento/Voltar/Voltar";
 import ButtonPesquisar from "../../components/Vencimento/Pesquisar/Pesquisar";
 
 function pageVencimento() {
@@ -18,11 +19,14 @@ function pageVencimento() {
           <InputDatasVencimento />
           <InputDataInicio />
           <InputDataFim />
+        </div>
+      </div>
+      <div className={styles.Meio}>
           <div className={styles.Botoes}>
+            <ButtonVoltar />
             <ButtonLimpar />
             <ButtonPesquisar />
           </div>
-        </div>
       </div>
       <div className={styles.Baixo}>
         <TabelaVencimento />
