@@ -9,6 +9,8 @@ export default function ButtonPesquisar() {
       alert("Insira o valor em Todos os Campos");
     }else{
       LoadCaixa('%25'+caixa.toUpperCase()+"%25");
+      var resultado = document.getElementById("Tbody").innerHTML = '<tr><td colspan="5"><div class="'+stylesPesquisar.DivCarregar+'"><div class="'+stylesPesquisar.Carregar+'"></div></div></td></tr>'
+      return resultado;
     }
   }
   return (

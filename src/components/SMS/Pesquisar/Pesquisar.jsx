@@ -26,6 +26,8 @@ export default function ButtonPesquisar() {
       alert("Insira o valor em Todos os Campos");
     }else{
       LoadSMS('%'+nro, dataInicio, dataFim);
+      var resultado = document.getElementById("Tbody").innerHTML = '<tr><td colspan="4"><div class="'+stylesPesquisar.DivCarregar+'"><div class="'+stylesPesquisar.Carregar+'"></div></div></td></tr>'
+      return resultado;
     }
   }
   return (

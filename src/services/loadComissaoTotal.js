@@ -5,7 +5,6 @@ export default function Load(ComissaoVendaTV, ComissaoVendaTel, ComissaoVendaRec
   
   var url = `http://localhost:3000/api/comissaoTotal?&comissaoVendaTV=`+ComissaoVendaTV+`&comissaoVendaTel=`+ComissaoVendaTel+`&comissaoVendaRecorrente=`+ComissaoVendaRecorrente+`&comissaoVenda=`+ComissaoVenda+`&comissaoDia01=`+Dia01+`&comissaoDia02=`+Dia02+`&comissaoRenovacaoTVFrente=`+RenovacaoTVFrente+`&comissaoRenovacaoTVTele=`+RenovacaoTVTele+`&comissaoRenovacaoTelFrente=`+RenovacaoTelFrente+`&comissaoRenovacaoTelTele=`+RenovacaoTelTele+`&comissaoRenovacaoRecorrenteFrente=`+RenovacaoRecorrenteFrente+`&comissaoRenovacaoRecorrenteTele=`+RenovacaoRecorrenteTele+`&comissaoRenovacaoFrente2=`+RenovacaoFrente2+`&comissaoRenovacaoFrente50=`+RenovacaoFrente50+`&comissaoRenovacaoTele3=`+RenovacaoTele3+`&comissaoRenovacaoTele4=`+RenovacaoTele4+`&dataInicio=`+dtInicio+`&dataFim=`+dtFim;
   // Construa a URL com os parâmetros
-  
   return axios.get(url)
     .then((response) => {
        return tabelaComissaoTotal(response.data);

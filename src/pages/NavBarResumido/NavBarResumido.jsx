@@ -1,31 +1,58 @@
 import { Link } from 'react-router-dom';
 import style from './NavBarResumido.module.css';
 import imgLogo from "../../assets/SMS/SMS.png";
+import { useEffect } from 'react';
 
-function onload(){
+function animacaoOlhos(){
     const pupila = document.querySelector("#olho1");
     const pupila2 = document.querySelector("#olho2");
-    document.addEventListener("mousemove", (e) => {
-        let x = e.clientX * 50 / window.innerWidth - 50;
-        let y = e.clientY * 50 / window.innerHeight - 50;
-        
-        pupila.style.left = x + "%";
-        pupila.style.top = y + "%";
+    
+        document.addEventListener("mousemove", (e) => {
+            let x = e.clientX * 50 / window.innerWidth - 50;
+            let y = e.clientY * 50 / window.innerHeight - 50;
+            
+            pupila.style.left = x + "%";
+            pupila.style.top = y + "%";
+    
+            pupila2.style.left = x + "%";
+            pupila2.style.top = y + "%";
+        });
+  }
 
-        pupila2.style.left = x + "%";
-        pupila2.style.top = y + "%";
-    });
+  function ValidaEmail(){
+    useEffect(() => {
+        animacaoOlhos()
+      }, []);
+    if(sessionStorage.getItem(0).includes('@onnetmais.com.br')){
+        var nome = sessionStorage.getItem(0).substring(0,sessionStorage.getItem(0).indexOf('@'));
+        const arr = nome.replaceAll(".", " ").split(" ");
+        for (var i = 0; i < arr.length; i++) {
+            arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
+        
+        }
+        const str2 = arr.join(" ");
+        return str2;
+    }else{
+        var nome = sessionStorage.getItem(0).substring(0,sessionStorage.getItem(0).indexOf('.'));
+        const arr = nome.replaceAll(".", " ").split(" ");
+        for (var i = 0; i < arr.length; i++) {
+            arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
+        
+        }
+        const str2 = arr.join(" ");
+        return str2;
+    }
 }
 
 export default function NavBarResumido(){
-    window.addEventListener("load", onload, false);
+    
     
     function mouseOver(){
         document.getElementById("labios").style.height = "50%";
         document.getElementById("labios").style.transition = "0.2s";
     }
     function mouseOut(){
-        document.getElementById("labios").style.height = "5%";
+        document.getElementById("labios").style.height = "0%";
     }
     return (
         <div className={style.Tela}>
@@ -41,6 +68,12 @@ export default function NavBarResumido(){
                             Quantidade de Contratos Por Data de Vencimento
                         </div>
                     </Link>
+                </div>
+                <div className={style.Fala} id='DivFala'>
+                    <span>Bem Vindo!</span>
+                </div>
+                <div className={style.Fala2} id='DivFala2'>
+                    <span>{ValidaEmail()}</span>
                 </div>
                 <div className={style.Imagem}>
                     <div className={style.Container}>
