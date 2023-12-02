@@ -1,0 +1,31 @@
+.DivComissaoVendaFrente50{
+    align-items: center;
+    justify-content: center;
+    top: 0vh;
+    width: 100%;
+    height: 10%;
+    position: relative;
+    display: flex;
+}
+.InputComissaoVendaFrente50{
+    display: flex;
+    width: 70%;
+    height: 100%;
+    border-radius: 30px;
+    box-sizing: border-box;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 100%;
+    text-align: center;
+    text-justify: center;
+    color: white;
+    border: 5px white solid;
+}
+
+.InputComissaoVendaFrente50::placeholder{
+    font-weight: bold;
+    font-size: 100%;
+    text-align: center;
+    text-justify: center;
+    color: white;
+}

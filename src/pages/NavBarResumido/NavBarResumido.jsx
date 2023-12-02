@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import style from './NavBarResumido.module.css';
 import imgLogo from "../../assets/SMS/SMS.png";
 import { useEffect } from 'react';
+import Beta from "../../components/Beta/Beta/Beta";
 
 function animacaoOlhos(){
     const pupila = document.querySelector("#olho1");
@@ -129,6 +130,7 @@ export default function NavBarResumido(){
                     </Link>
                 </div>
             </div>
+            <Beta />
         </div>
     );
 }

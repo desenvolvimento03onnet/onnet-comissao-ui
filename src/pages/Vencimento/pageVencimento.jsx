@@ -7,6 +7,7 @@ import ImgLogo from "../../components/Vencimento/Logo/Logo";
 import ButtonLimpar from "../../components/Vencimento/Limpar/Limpar";
 import ButtonVoltar from "../../components/Vencimento/Voltar/Voltar";
 import ButtonPesquisar from "../../components/Vencimento/Pesquisar/Pesquisar";
+import Beta from "../../components/Beta/Beta/Beta";
 
 function pageVencimento() {
   return (
@@ -31,6 +32,7 @@ function pageVencimento() {
       <div className={styles.Baixo}>
         <TabelaVencimento />
       </div>
+      <Beta />
     </div>
   );
 }

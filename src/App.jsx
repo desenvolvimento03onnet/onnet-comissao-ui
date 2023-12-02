@@ -7,8 +7,9 @@ import Validacao from "./pages/Validacao/Validacao"
 import PageVencimento from "./pages/Vencimento/pageVencimento";
 import PageAtivos from "./pages/Ativos/pageAtivos";
 import PageCaixa from "./pages/Caixa/pageCaixa";
+import PageComissaoVenda from "./pages/ComissaoVenda/pageComissaoVenda";
+import PageComissaoRenovacao from "./pages/ComissaoRenovacao/pageComissaoRenovacao";
 import PageComissaoTotal from "./pages/ComissaoTotal/pageComissaoTotal";
-
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" Component={Validacao} />
+        <Route path="/" Component={Validacao}  />
         <Route path="/Navbar" Component={NavBar} />
         <Route path="/NavbarResumido" Component={NavBarResumido} />
         <Route path="/PageSMS" Component={PageSMS} />
@@ -24,6 +25,8 @@ function App() {
         <Route path="/PageQntContratosAtivos" Component={PageAtivos} />
         <Route path="/PageClientesPorCaixa" Component={PageCaixa} />
         <Route path="/PageComissaoTotal" Component={PageComissaoTotal} />
+        <Route path="/PageComissaoVenda" Component={PageComissaoVenda} />
+        <Route path="/PageComissaoRenovacao" Component={PageComissaoRenovacao} />
       </Routes>
     </Router>
   );

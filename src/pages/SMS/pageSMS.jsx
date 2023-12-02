@@ -7,6 +7,7 @@ import ImgLogo from "../../components/SMS/Logo/Logo";
 import ButtonLimpar from "../../components/SMS/Limpar/Limpar";
 import ButtonVoltar from "../../components/SMS/Voltar/Voltar";
 import ButtonPesquisar from "../../components/SMS/Pesquisar/Pesquisar";
+import Beta from "../../components/Beta/Beta/Beta";
 
 function pageSMS() {
   
@@ -32,6 +33,7 @@ function pageSMS() {
       <div className={styles.Baixo}>
         <TabelaSMS />
       </div>
+      <Beta />
     </div>
   );
 }

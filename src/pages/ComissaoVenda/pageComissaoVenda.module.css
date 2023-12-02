@@ -1,0 +1,68 @@
+.Card{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 0;
+    border-radius: 30px;
+    background-color: transparent;
+    box-shadow: 2px 2px 2px 2px;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    overflow: hidden;
+}
+.Cima{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    top: 0%;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+    background-color: transparent;
+    overflow: hidden;
+}
+.Esquerda{
+    height: 100%;
+    width: 33%;
+    border-radius: 30px;
+    display: flex;
+    text-align: center;
+    word-break: break-all;
+    justify-content: space-around;
+    align-items: center;
+}
+.Direita{
+    height: 100%;
+    width: 67%;
+    border-radius: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+}
+.Direita .Parte1, .Direita .Parte2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+.Botoes{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    height: 10%;
+}
+.Baixo{
+    position: relative;
+    left: 0%;
+    height: 30%;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 0px 0px 30px 30px;
+    overflow-y: scroll;
+}

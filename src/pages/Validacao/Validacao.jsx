@@ -2,7 +2,7 @@ import style from './Validacao.module.css'
 import EmailValidacao from '../../components/Validacao/Email/Email';
 import ButtonValidacao from '../../components/Validacao/Button/Button';
 import Logo from '../../assets/Logo/Logo.gif'
-
+import Beta from "../../components/Beta/Beta/Beta";
 
 
 export default function Validacao(){
@@ -17,6 +17,7 @@ export default function Validacao(){
                 <EmailValidacao />
                 <ButtonValidacao />
             </div>
+            <Beta />
         </div>
     );
 }

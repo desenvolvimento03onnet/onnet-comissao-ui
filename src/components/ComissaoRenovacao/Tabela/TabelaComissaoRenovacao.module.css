@@ -1,0 +1,78 @@
+ .DivFundo{
+    top: 0%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+ }
+ .DivBotao{
+    display: flex;
+    position: relative;
+    height: 30%;
+    justify-content: center;
+    align-items: center;
+ }
+ .TabelaFundo{
+    border-collapse: collapse;
+    position: relative;
+    table-layout: fixed;
+    border: 10px 0px 0px 0px;
+    border-color: #008000;
+    box-shadow: 1px 1px 1px 1px;
+    background-color: white;
+    width: 97%;
+    height: 70%;
+    max-height: 70%;
+    top: 0%;
+    border-radius: 30px;
+    font-size: 120%;
+    overflow: hidden;
+}
+.Thead{
+    color: black;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    overflow-y: auto;
+    height: 25%;
+    top: 0%;
+    position: sticky;
+    background-color:white;
+}
+.Thead .Th{
+    word-break: break-word;
+    border: 1px white solid;
+    position: sticky;
+    top: 0px;
+}
+.Tbody{
+    top: 5%;
+    height: 80%;
+    width: 100%;
+    background-color:#D3D3D3;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    overflow-y: auto;
+    border-color: black;
+    border-width: 2px;
+    
+}
+.DivBotao{
+    width: 100%;
+}
+.ButtonDownload{
+    background-color: transparent;
+    color: white;
+    height: 70%;
+    width: 10%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: 5px white solid;
+    font-size: 120%;
+}

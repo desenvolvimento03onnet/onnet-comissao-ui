@@ -5,6 +5,7 @@ import ImgLogo from "../../components/SMS/Logo/Logo";
 import ButtonLimpar from "../../components/Caixa/Limpar/Limpar";
 import ButtonVoltar from "../../components/Caixa/Voltar/Voltar";
 import ButtonPesquisar from "../../components/Caixa/Pesquisar/Pesquisar";
+import Beta from "../../components/Beta/Beta/Beta";
 
 function pageCaixa() {
   return (
@@ -27,6 +28,7 @@ function pageCaixa() {
       <div className={styles.Baixo}>
         <TabelaCaixa />
       </div>
+      <Beta />
     </div>
   );
 }

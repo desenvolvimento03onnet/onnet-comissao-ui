@@ -22,6 +22,7 @@ import DataFim from "../../components/ComissaoTotal/DataFim/DataFim";
 import ButtonLimpar from "../../components/ComissaoTotal/Limpar/Limpar";
 import ButtonVoltar from "../../components/ComissaoTotal/Voltar/Voltar";
 import ButtonPesquisar from "../../components/ComissaoTotal/Pesquisar/Pesquisar";
+import Beta from "../../components/Beta/Beta/Beta";
 
 function pageComissaoTotal() {
   return (
@@ -63,6 +64,7 @@ function pageComissaoTotal() {
       <div className={styles.Baixo}>
         <TabelaComissaoTotal />
       </div>
+      <Beta />
     </div>
   );
 }

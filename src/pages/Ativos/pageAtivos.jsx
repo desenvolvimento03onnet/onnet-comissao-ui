@@ -5,6 +5,7 @@ import ImgLogo from "../../components/SMS/Logo/Logo";
 import ButtonLimpar from "../../components/Ativos/Limpar/Limpar";
 import ButtonVoltar from "../../components/Ativos/Voltar/Voltar";
 import ButtonPesquisar from "../../components/Ativos/Pesquisar/Pesquisar";
+import Beta from "../../components/Beta/Beta/Beta";
 
 function pageAtivos() {
   return (
@@ -27,6 +28,7 @@ function pageAtivos() {
       <div className={styles.Baixo}>
         <TabelaAtivos />
       </div>
+      <Beta />
     </div>
   );
 }
